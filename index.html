@@ -1,27 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-     <!-- Tailwind css CDN -->
-     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Tailwind css CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-     <!-- Font  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-      
-     <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-          --my-font: "Sora", serif;
-        }
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- DasiyUi -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-display: "Sora", "serif";
+       
+
+}
     </style>
+  </head>
+  <body class="font-[-display] bg-[#FBFBF9]">
+    <header class="max-w-[1600px] mx-auto">
+      <nav
+        class="flex justify-between items-center px-3 md:px-[100px] lg:px-[100px] py-3"
+      >
+        <div>
+          <img src="./assets/logo-header.png" alt="" />
+        </div>
+        <div class="text-3xl md:hidden lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:block lg:block">
+          <ul class="flex gap-4">
+            <li class="text-xl"><a href="">Home</a></li>
+            <li class="text-xl"><a href="">Services</a></li>
+            <li class="text-xl"><a href="">Contacts Us</a></li>
+          </ul>
+        </div>
+        <div class="space-x-3 hidden md:block lg:block">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <button class="border px-3 py-1 border-black">Login</button>
+          <button class="bg-[#57B446] text-white px-3 py-1">Register</button>
+        </div>
+      </nav>
 
-</head>
-<body class=" font-[--my-font]">
-    
-</body>
+      <!-- Hero section add -->
+      <div class="flex flex-col justify-items-center items-center">
+        <div class="mt-8 text-center">
+          <h1 class="text-5xl font-semibold   animate-bounce">
+            Freshness
+            <span class="text-[#57B446]">
+              You Can <br />
+              Count On</span
+            >, Prices You’ll Love!
+          </h1>
+          <p class="text-center">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, <br />
+            we’ve got you covered every day!
+          </p>
+        </div>
+        <div>
+            <div class="flex ">
+                <img src="./assets/hero-vegetables.png" alt="" />
+                
+              </div>
+        </div>
+      </div>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/76390240b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
