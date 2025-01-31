@@ -31,13 +31,17 @@
       @theme {
         --color-clifford: #da373d;
         --font-display: "Sora", "serif";
-       
+        --color-gradient:#53DB3A;
+        --color-bottom:#FFFFFF;
 
+}
+.font{
+  font-family:  "Sora", "serif";
 }
     </style>
   </head>
-  <body class="font-[-display] ">
-    <header class="max-w-[1600px] mx-auto min-h-screen  bg-[#EFEBE3]">
+  <body class=" font ">
+    <header class="max-w-[1600px] mx-auto   bg-[#EFEBE3]">
       <nav
         class="flex justify-between items-center px-3 md:px-[100px] lg:px-[100px] py-3"
       >
@@ -49,10 +53,10 @@
         </div>
         <div class="hidden md:block lg:block">
           <ul class="flex gap-4">
-            <li class="text-xl"><a href="">Home</a></li>
-            <li class="text-xl"><a href="">Services</a></li>
-            <li class="text-xl"><a href="">Contacts Us</a></li>
-          </ul>
+            <li class="text-xl hover:bg-gray-600 px-4 py-3 hover:text-white hover:rounded-xl  "><a href="">Home</a></li>
+            <li class="text-xl hover:bg-gray-600 px-4 py-3 hover:text-white hover:rounded-xl"><a href="">Services</a></li>
+            <li class="text-xl hover:bg-gray-600 px-4 py-3 hover:text-white hover:rounded-xl"><a href="">Contacts Us</a></li>
+          </ul> 
         </div>
         <div class="space-x-3 hidden md:block lg:block">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -91,7 +95,7 @@
          <!-- Service -->
            <div class="max-w-[1320px] mx-auto md:px-[140px] lg:px-[140px] mt-14 mb-[140px] px-3">
                <h4 class=" mb-10 text-4xl">Service</h4>
-                <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 items-center   gap-4 ">
+                <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 items-center justify-center   gap-4 ">
                      <div class="border items-center justify-items-center p-5 bg-[#EFEBE3]  rounded-xl  max-w-[424px] h-[367px]">
                             <div class=" w-[70px] h-[70px] rounded-full bg-white  mb-[40px] ">
                                 <img src="./assets/service.png" alt="" class=" w-full p-3">
@@ -121,6 +125,151 @@
                      </div>
                 </div>
            </div>
+
+            <!-- Popular Section -->
+              <div class="max-w-[1600px] mx-auto   bg-[#EFEBE3]">
+                    <div class="max-w-[1320px] mx-auto pt-12 md:pl-[140px] md:pr-[80px]   lg:pr-[80px]  lg:pl-[140px]  mb-[140px] px-3 md:pt-[241px] pb-[100px]">
+                        <h3 class=" text-4xl font-semibold text-[#57B446] mb-[46px]">Popular Products</h3>
+
+                         <div class="flex flex-col md:flex-row lg:flex-row gap-[24px]">
+                            <!-- left card -->
+                             <div class="   p-4 bg-gradient-to-t from-[#FFFFFF] from-0% via-[#71e15d] via-100% to-[#71e15d] to-100%  rounded-lg shadow-lg max-w-[424px]">
+                                 <div>
+                                     <h4 class=" mt-5 text-5xl text-white mb-4 font-bold">30% off</h4>
+                                      <p class=" text-xl mb-9">Discover a world of treats, toys, and essentials handpicked for </p>
+                                      <button class="  text-black px-8 py-2 rounded-md text-2xl font-semibold bg-white">Buy Now</button>
+                                 </div>
+                                 <div class=" float-end">
+                                    <img src="./assets/vegetable-offer.png" alt="">
+                                 </div>
+                             </div>
+
+                             <!-- right card -->
+                            <div class=" grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-rows-3  gap-3 max-w-[875px]  ">
+                                <div class="flex  bg-white rounded-xl shadow-2xl  px-5  py-1 items-center  gap-2  max-w-[250px] h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-3 py-2 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col ">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class=" ">Tomato 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px] ">
+                                    <div class=" bg-[#efebe3]   px-3 py-2 rounded-xl">
+                                        <img src="./assets/image 43.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]   px-3 py-2 rounded-xl">
+                                        <img src="./assets/image 44.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Potato 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Tomato 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 43.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px]">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                <div class=" hidden md:block lg:block">
+                                  <div class="flex  bg-white rounded-xl shadow-2xl px-5 py-1 items-center gap-2 max-w-[250px]  h-[118px] ">
+                                    <div class=" bg-[#efebe3]  px-5 py-4 rounded-xl">
+                                        <img src="./assets/image 41.png" alt="" class="   w-[50px] h-[50px]">
+                                    </div>
+                                    <div class=" flex justify-center items-center flex-col">
+                                         <div class=" flex gap-3 text-2xl">
+                                            <img src="./assets/Vector.png" alt="" class=" w-full">
+                                        <p>4.5</p>
+                                         </div>
+                                        <h4 class="">Onion 1 KG</h4>
+                                        <h5>$39.99</h5>
+                                    </div>
+                                 </div>
+                                </div>
+                            </div>
+                         </div>
+
+                    </div>
+              </div>
       </main>
     <script
       src="https://kit.fontawesome.com/76390240b8.js"
